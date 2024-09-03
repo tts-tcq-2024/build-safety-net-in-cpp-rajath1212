@@ -9,6 +9,15 @@ char getSoundexCode(char c) {
 return(checkTable[(int(c) - 65)];
     
 }
+void codeCreation(std::string& soundex, const std::string& name)
+{
+        for (size_t i = 1; i < name.length() && soundex.length() < 4; ++i) {
+        char code = getSoundexCode(name[i]);
+        if (code != '0' && code != prevCode) {
+            soundex += code;
+            prevCode = code;
+        }
+}
 
 std::string generateSoundex(const std::string& name) {
     if (name.empty()) return "";
