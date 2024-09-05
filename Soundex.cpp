@@ -3,7 +3,7 @@
 #include <iostream>
 errorWord()
 {
-    cout<<"Error :Special characters in the word";
+   std::cout<<"Error :Special characters in the word";
 }
 char getSoundexCode(char c) {
     const char checkTable[26]={'0', '1', '2', '3', '0', '1', '2', '0', '0', '2', '2', '4', '5', '5', '0', 
