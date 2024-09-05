@@ -1,13 +1,16 @@
 #include "Soundex.h"
 #include <cctype>
 #include <iostream>
-
+errorWord()
+{
+    cout<<"Error :Special characters in the word";
+}
 char getSoundexCode(char c) {
     const char checkTable[26]={'0', '1', '2', '3', '0', '1', '2', '0', '0', '2', '2', '4', '5', '5', '0', 
                                 '1', '2', '6', '2', '3', '0', '0', '0', '2', '0', '2' };
     
     c = toupper(c);
-return(checkTable[(int(c) - 65)]);
+  return (c >= 65 && c <= 90) ? soundexTable[c - 65] : errorWord();
     
 }
 void codeConcatinate(std::string& soundex, char c, char& prevCode)
