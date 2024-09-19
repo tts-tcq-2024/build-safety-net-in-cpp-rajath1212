@@ -1,9 +1,9 @@
-Test Specification for Soundex Function
+**Test Specification for Soundex Function**
 
 Goal - to verify generateSoundex function accross various condition such as empty strings, single-character inputs, multiple-character names, and handling of special characters
 
-Test Cases
-1- Empty String test case 
+**Test Cases**
+1- **Empty String test case **
 to validate the result when empty string is given as input
 
 input - Empty string("")
@@ -15,7 +15,7 @@ TEST(SoundexTest, HandlesEmptyString) {
 
 output - ""
 
-2 - Single character check 
+2 - **Single character check **
 to validate the result when single character is given as input
 
 input - "A"
@@ -29,7 +29,7 @@ output -
 "A000"
 
 
-3 - Random word check - 
+3 - **Random word check** 
 to validate the result when random words are given as input 
 
 inputs -    rajath
@@ -43,7 +43,7 @@ TEST(SoundexTest, RandomWords) {
 output - 
 "R230
 "P622"
-4 - Case sensitivity check 
+4 - **Case sensitivity check** 
 to validate the result when case sensitve words are given as input 
 input - GiThUb
         BoSCh
