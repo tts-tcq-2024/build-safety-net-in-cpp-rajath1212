@@ -10,7 +10,8 @@ to validate the result when empty string is given as input
 input - Empty string("")
 
 code:
-TEST(SoundexTest, HandlesEmptyString) {
+TEST(SoundexTest, HandlesEmptyString) 
+{
     EXPECT_EQ(generateSoundex(""), "");
 }
 
@@ -22,7 +23,8 @@ to validate the result when single character is given as input
 input - "A"
 
 code:
-TEST(SoundexTest, HandlesSingleCharacter) {
+TEST(SoundexTest, HandlesSingleCharacter) 
+{
     EXPECT_EQ(generateSoundex("A"), "A000");
 }
 
@@ -36,7 +38,8 @@ inputs -    rajath
             Projects
 
 code:
-TEST(SoundexTest, RandomWords) {
+TEST(SoundexTest, RandomWords) 
+{
     EXPECT_EQ(generateSoundex("rajath"), "R230");
     EXPECT_EQ(generateSoundex("Projects"), "P622");
 }
@@ -50,7 +53,8 @@ input - GiThUb
         BoSCh
 
 code:
-TEST(SoundexTest, CaseDifferenceWords) {
+TEST(SoundexTest, CaseDifferenceWords) 
+{
     EXPECT_EQ(generateSoundex("GiThUb"), "G310");   
     EXPECT_EQ(generateSoundex("BoSCh"), "B200");   
 }
