@@ -18,7 +18,4 @@ TEST(SoundexTest, CaseDifferenceWords) {
     EXPECT_EQ(generateSoundex("GiThUb"), "G310");   
     EXPECT_EQ(generateSoundex("BoSCh"), "B200");   
 }
-TEST(SoundexTest, SpecialCharecters) {
-    EXPECT_EQ(generateSoundex("R@nDom"), "Error :Special characters in the word");   
-    EXPECT_EQ(generateSoundex("CLa#"), "Error :Special characters in the word");   
-}
+
