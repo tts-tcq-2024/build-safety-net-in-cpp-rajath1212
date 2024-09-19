@@ -3,7 +3,8 @@
 Goal - to verify generateSoundex function accross various condition such as empty strings, single-character inputs, multiple-character names, and handling of special characters
 
 **Test Cases**
-1- **Empty String test case **
+
+1- Empty String test case 
 to validate the result when empty string is given as input
 
 input - Empty string("")
