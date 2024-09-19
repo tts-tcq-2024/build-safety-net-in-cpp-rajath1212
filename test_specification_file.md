@@ -16,7 +16,7 @@ TEST(SoundexTest, HandlesEmptyString) {
 
 output - ""
 
-2 - **Single character check **
+2 - Single character check 
 to validate the result when single character is given as input
 
 input - "A"
@@ -26,11 +26,10 @@ TEST(SoundexTest, HandlesSingleCharacter) {
     EXPECT_EQ(generateSoundex("A"), "A000");
 }
 
-output -      
-"A000"
+output -     "A000"
 
 
-3 - **Random word check** 
+3 - Random word check
 to validate the result when random words are given as input 
 
 inputs -    rajath
@@ -44,7 +43,8 @@ TEST(SoundexTest, RandomWords) {
 output - 
 "R230
 "P622"
-4 - **Case sensitivity check** 
+
+4 - Case sensitivity check
 to validate the result when case sensitve words are given as input 
 input - GiThUb
         BoSCh
@@ -56,4 +56,4 @@ TEST(SoundexTest, CaseDifferenceWords) {
 }
 
 output - "G310"
-          "B200"
+         "B200"
